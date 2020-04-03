@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfAppCheckpoint3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppCheckpoint3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Grid Height="419" Margin="0,0,0,0">
+            <Label Content="File Path:" Height="30" Width="120" Margin="33,7,640.6,382"/>
+            <TextBox x:Name ="FilePathTxtBox" Text="{Binding Shop.Name}"  Height="20" Width="600" Margin="105,10,88.6,389"/>
+            <Button x:Name="DisplayFileButton" Margin="105,42,568.6,351" Content="Display File" Click="DisplayFileButton_Click"/>
+            <Button x:Name="DeleteFileButton" Margin="337,41,337.6,351" Content="Delete File" Click="DeleteFileButton_Click"/>
+            <Button x:Name="CreateFileButton" Margin="587,41,88.6,351" Content="Create File" Click="CreateFileButton_Click"/>
+            <ListBox x:Name ="FileInfoBox" HorizontalAlignment="Left" Height="293" Margin="105,92,0,0" VerticalAlignment="Top" Width="600"/>
+        </Grid>
+    </StackPanel>
+</Window>
